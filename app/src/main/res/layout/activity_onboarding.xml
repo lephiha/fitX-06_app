@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_pink_dark"
+    android:padding="24dp">
+
+    <!-- Content Container -->
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="290dp"
+            android:layout_height="122dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Chào mừng đến\nvới FITX-06"
+            android:textSize="40sp"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Subtitle 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nền tảng quản lý tập luyện thông minh"
+            android:textSize="16sp"
+            android:textColor="@color/text_pink_light"
+            android:gravity="center" />
+
+        <!-- Subtitle 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kết nối với PT chuyên nghiệp và đạt mục tiêu của bạn"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray_light"
+            android:gravity="center"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp" />
+
+    </LinearLayout>
+
+    <!-- Bottom Button -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:text="Bắt đầu ngay →"
+        android:textSize="16sp"
+        android:textColor="@color/text_white"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_pink_gradient"
+        android:gravity="center"
+        android:includeFontPadding="false"/>
+
+</RelativeLayout>

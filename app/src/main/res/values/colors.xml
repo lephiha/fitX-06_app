@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Colors -->
+    <color name="primary_pink">#EC4899</color>
+    <color name="primary_pink_dark">#C026D3</color>
+    <color name="primary_black">#000000</color>
+    <color name="background_dark">#0A0A0A</color>
+    <color name="surface_dark">#1C2536</color>
+    <color name="surface_darker">#151B2B</color>
+
+    <!-- Text Colors -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_pink_light">#FFC9E3</color>
+    <color name="text_gray_light">#E5E7EB</color>
+    <color name="text_gray">#9CA3AF</color>
+    <color name="text_gray_dark">#6B7280</color>
+
+    <!-- Border & Input -->
+    <color name="input_background">#1C2536</color>
+    <color name="border_pink">#EC4899</color>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">FITX-06</string>
+
+    <!-- Splash & Onboarding -->
+    <string name="tagline">Transform Your Body</string>
+    <string name="welcome_title">Chào mừng đến\nvới FITX-06</string>
+    <string name="onboarding_subtitle1">Nền tảng quản lý tập luyện thông minh</string>
+    <string name="onboarding_subtitle2">Kết nối với PT chuyên nghiệp và đạt mục tiêu của bạn</string>
+    <string name="btn_start">Bắt đầu ngay →</string>
+
+    <!-- Login -->
+    <string name="login_title">Đăng nhập</string>
+    <string name="login_subtitle">Chào mừng trở lại FITX-06!</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="email_hint">email@example.com</string>
+    <string name="password_hint">••••••••</string>
+    <string name="remember_me">Ghi nhớ đăng nhập</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="or">hoặc</string>
+    <string name="google_signin">Đăng nhập bằng Google</string>
+    <string name="create_account">Đăng ký tài khoản mới</string>
+
+    <!-- Sign Up -->
+    <string name="back">Quay lại</string>
+    <string name="signup_title">Đăng ký học viên</string>
+    <string name="signup_subtitle">Tạo tài khoản để bắt đầu hành trình của bạn</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="full_name_hint">Nguyễn Văn A</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="phone_hint">0123456789</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="password_requirement">Tối thiểu 8 ký tự</string>
+    <string name="btn_signup">Đăng ký ngay</string>
+    <string name="google_signup">Đăng ký bằng Google</string>
+    <string name="have_account">Đã có tài khoản? </string>
+    <string name="login_link">Đăng nhập</string>
+
+    <!-- Validation Messages -->
+    <string name="error_empty_email">Vui lòng nhập email</string>
+    <string name="error_invalid_email">Email không hợp lệ</string>
+    <string name="error_empty_password">Vui lòng nhập mật khẩu</string>
+    <string name="error_short_password">Mật khẩu phải có ít nhất 6 ký tự</string>
+    <string name="error_empty_name">Vui lòng nhập họ và tên</string>
+    <string name="error_short_name">Họ và tên phải có ít nhất 3 ký tự</string>
+    <string name="error_empty_phone">Vui lòng nhập số điện thoại</string>
+    <string name="error_invalid_phone">Số điện thoại không hợp lệ</string>
+    <string name="error_password_mismatch">Mật khẩu xác nhận không khớp</string>
+    <string name="error_short_signup_password">Mật khẩu phải có ít nhất 8 ký tự</string>
+
+    <!-- Messages -->
+    <string name="logging_in">Đang đăng nhập...</string>
+    <string name="signing_up">Đang đăng ký tài khoản...</string>
+    <string name="feature_development">Tính năng đang phát triển</string>
+</resources>

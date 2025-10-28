@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/primary_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_header_pink_rounded"
+            android:paddingBottom="36dp">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="290dp"
+                android:layout_height="122dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo1" />
+
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Đăng nhập"
+                android:textColor="@color/text_white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="Chào mừng trở lại FITX-06!"
+                android:textColor="@color/text_pink_light"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <!-- Form Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Email Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Email Input -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_rounded">
+
+                <ImageView
+                    android:id="@+id/ivEmailIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_mail"
+                    app:tint="@color/text_gray" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/ivEmailIcon"
+                    android:background="@android:color/transparent"
+                    android:hint="email@example.com"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_gray_dark"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <!-- Password Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Mật khẩu"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Password Input -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_rounded">
+
+                <ImageView
+                    android:id="@+id/ivLockIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_lock"
+                    app:tint="@color/text_gray" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/ivLockIcon"
+                    android:layout_toStartOf="@id/ivPasswordToggle"
+                    android:background="@android:color/transparent"
+                    android:hint="••••••••"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_gray_dark"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/ivPasswordToggle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_eye"
+                    app:tint="@color/text_gray" />
+            </RelativeLayout>
+
+            <!-- Remember & Forgot -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbRemember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary_pink"
+                    android:text="Ghi nhớ đăng nhập"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp"
+                    android:paddingStart="4dp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quên mật khẩu?"
+                    android:textColor="@color/primary_pink"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Login Button -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bg_button_pink_gradient"
+                android:text="Đăng nhập"
+                android:textColor="@color/text_white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:includeFontPadding="false" />
+
+
+            <!-- Divider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_gray_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="hoặc"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_gray_dark" />
+            </LinearLayout>
+
+            <!-- Google Sign In -->
+            <Button
+                android:id="@+id/btnGoogleSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_button_white"
+                android:drawableStart="@drawable/ic_google"
+                android:drawablePadding="12dp"
+                android:gravity="center"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="Đăng nhập bằng Google"
+                android:textColor="@color/primary_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button_outline_pink"
+                android:text="Đăng ký tài khoản mới"
+                android:textColor="@color/primary_pink"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:includeFontPadding="false" />
+        </LinearLayout>
+</ScrollView>
+

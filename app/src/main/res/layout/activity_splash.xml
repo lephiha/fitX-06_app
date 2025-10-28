@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_pink_dark">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="290dp"
+            android:layout_height="122dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo1" />
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/fitx_06"
+            android:textSize="56sp"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.05" />
+
+        <!-- Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Transform Your Body"
+            android:textSize="18sp"
+            android:textColor="@color/primary_black"
+            android:fontFamily="sans-serif-light" />
+
+    </LinearLayout>
+
+</RelativeLayout>
