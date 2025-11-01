@@ -6,12 +6,22 @@
         android:title="Trang chủ" />
 
     <item
-        android:id="@+id/nav_features"
-        android:icon="@drawable/ic_grid"
-        android:title="Chức năng" />
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/ic_calendar"
+        android:title="Lịch tập" />
+
+    <item
+        android:id="@+id/nav_qr"
+        android:icon="@drawable/ic_qr"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat" />
 
     <item
         android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_account"
+        android:icon="@drawable/ic_person"
         android:title="Cá nhân" />
 </menu>
