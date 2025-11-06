@@ -1,7 +1,5 @@
 package com.lephiha.fitx_06
 
-import android.app.Activity
-
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -13,6 +11,7 @@ import android.view.animation.ScaleAnimation
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.lephiha.fitx_06.Helper.SessionHelper
 
 class SplashActivity : AppCompatActivity() {
 
@@ -63,13 +62,24 @@ class SplashActivity : AppCompatActivity() {
         }
         tvTagline?.startAnimation(taglineFadeIn)
 
-        // Chuyển sang màn Onboarding sau 2.5 giây
+        // Chuyển sang màn tiếp theo sau 2.5 giây
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, OnboardingActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-            finish()
+            navigateToNextScreen()
         }, 2500)
     }
-}
 
+    private fun navigateToNextScreen() {
+        // Check xem user đã đăng nhập chưa
+        val intent = if (SessionHelper.isLoggedIn(this)) {
+            // Đã đăng nhập -> vào thẳng MainActivity
+            Intent(this, MainActivity::class.java)
+        } else {
+            // Chưa đăng nhập -> vào OnboardingActivity
+            Intent(this, OnboardingActivity::class.java)
+        }
+
+        startActivity(intent)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+        finish()
+    }
+}

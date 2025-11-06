@@ -1,7 +1,5 @@
 package com.lephiha.fitx_06
 
-import android.app.Activity
-
 import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AlphaAnimation
@@ -40,10 +38,20 @@ class OnboardingActivity : AppCompatActivity() {
 
         // Xử lý click button "Bắt đầu ngay"
         btnStart?.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+            navigateToLogin()
         }
+    }
+
+    private fun navigateToLogin() {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        finish()
+    }
+
+    override fun onBackPressed() {
+        // Không cho phép back từ Onboarding
+        // Nếu muốn thoát app thì uncomment dòng dưới
+        // super.onBackPressed()
     }
 }

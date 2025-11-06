@@ -4,12 +4,15 @@
     android:height="40dp"
     android:viewportWidth="40"
     android:viewportHeight="40">
+
     <path
         android:fillColor="#FFD700"
         android:pathData="M20,2L26,14L38,16L29,25L31,38L20,32L9,38L11,25L2,16L14,14L20,2Z"/>
+
     <circle
-        android:fillColor="#FFA500"
-        android:cx="20"
-        android:cy="20"
-        android:radius="8"/>
+        android:fillColor="#FFC700"
+        android:centerX="20"
+        android:centerY="20"
+        android:radius="8dp"/>
+
 </vector>
