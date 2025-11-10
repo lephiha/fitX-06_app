@@ -8,7 +8,7 @@ object SessionHelper {
     private const val PREF_NAME = "auth_prefs"
     private const val KEY_TOKEN = "token"
     private const val KEY_EMAIL = "email"
-    private const val KEY_NAME = "name"
+    private const val KEY_FULLNAME = "fullname"
     private const val KEY_USER_ID = "user_id"
     private const val KEY_IS_LOGGED_IN = "is_logged_in"
 
@@ -16,11 +16,11 @@ object SessionHelper {
         return context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
     }
 
-    fun saveLoginInfo(context: Context, token: String, email: String, name: String, userId: Int) {
+    fun saveLoginInfo(context: Context, token: String, email: String, fullname: String, userId: Int) {
         getPrefs(context).edit().apply {
             putString(KEY_TOKEN, token)
             putString(KEY_EMAIL, email)
-            putString(KEY_NAME, name)
+            putString(KEY_FULLNAME, fullname)
             putInt(KEY_USER_ID, userId)
             putBoolean(KEY_IS_LOGGED_IN, true)
             apply()
@@ -40,7 +40,7 @@ object SessionHelper {
     }
 
     fun getName(context: Context): String? {
-        return getPrefs(context).getString(KEY_NAME, null)
+        return getPrefs(context).getString(KEY_FULLNAME, null)
     }
 
     fun getUserId(context: Context): Int {
